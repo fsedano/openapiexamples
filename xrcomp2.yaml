@@ -1,0 +1,49 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: producer-1
+  description: Producer 1
+spec:
+  type: service
+  lifecycle: production
+  owner: devxteam1
+  providesApis:
+    - franasync2
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: consumer-1
+  description: Consumer 1
+spec:
+  type: service
+  lifecycle: production
+  owner: devxteam1
+  consumesApis:
+    - franasync2
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: consumer-2
+  description: Consumer 2
+spec:
+  type: service
+  lifecycle: production
+  owner: devxteam1
+  consumesApis:
+    - franasync2
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: devxteam1
+  description: Team A
+spec:
+  type: team
+  profile:
+    # Intentional no displayName for testing
+    email: team-a@example.com
+    picture: https://avatars.dicebear.com/api/identicon/team-a@example.com.svg?background=%23fff&margin=25
+  parent: backstage
+  children: []
