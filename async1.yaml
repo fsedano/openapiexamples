@@ -6,7 +6,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: devxteam
+  owner: devxteam1
   system: baas
   definition: |
     asyncapi: 2.6.0
