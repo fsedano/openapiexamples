@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: franasync
-  description: fran async api
+  name: franasync2
+  description: fran async api2
 spec:
   type: asyncapi
   lifecycle: production
