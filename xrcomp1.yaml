@@ -25,8 +25,8 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: consumer-1
-  description: Consumer 1
+  name: consumer-2
+  description: Consumer 2
 spec:
   type: service
   lifecycle: production
